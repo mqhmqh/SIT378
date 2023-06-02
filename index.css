@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+        <link href="./css/index.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="head_box">
+            <div class="back_box">
+                <span>Back</span>
+                <img src="./img/back.png"/>
+            </div>
+            <div class="middle_box">
+                <h1>Maggie <br/> dave</h1>
+                <div>
+                    <img src="./img/people.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="choose_box">
+            <button class="night" onclick="choose_night()">night mode</button>
+            <button class="day" onclick="choose_day()">day mode</button>
+        </div>
+        <div class="containter" id="containter">
+            <div class="cloumn">
+               <p>
+                    <input type="text"/>
+               </p>
+               <p>
+                    <input type="text"/>
+               </p>
+            </div>
+            <div class="cloumn">
+                <p>
+                     <input type="password"/>
+                </p>
+                <p>
+                     <input type="password"/>
+                </p>
+            </div>
+            <p>
+                <button>Save</button>
+            </p>
+        </div>
+
+        <!--buttom column-->
+        <div class="footer_box">
+            <ul>
+                <li>
+                    <img src="./img/f1.png">
+                </li>
+                <li>
+                    <img src="./img/f2.png">
+                </li>
+                <li>
+                    <img src="./img/f3.png">
+                </li>
+                <li>
+                    <img src="./img/f4.png">
+                </li>
+                <li>
+                    <img src="./img/f5.png">
+                </li>
+            </ul>
+        </div>
+        <script>
+            function choose_night(){
+                var containter=document.getElementById("containter");
+                document.body.style.backgroundColor="#110e15c2";
+                document.body.style.color="black";
+                containter.style.background="black";
+            }
+
+            function choose_day(){
+                var containter=document.getElementById("containter");
+                document.body.style.backgroundColor="#a9a9a938";
+                document.body.style.color="white";
+                containter.style.background="white";
+            }
+        </script>
+    </body>
